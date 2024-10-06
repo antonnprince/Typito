@@ -1,4 +1,4 @@
 {
     "version":2,
-    "buiids": [{ "src":" ./server.js", "use":"@vercel/node"}],
+    "buiids": [{ "src":" ./server.js", "use":"@vercel/node"}]
 }
