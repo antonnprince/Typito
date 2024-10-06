@@ -18,6 +18,12 @@ mongoose.connect(uri).then(()=>{
 }).catch((error)=>console.log(error))
 
 //to get all episodes
+
+app.get('/', async (req,res)=>{
+    console.log("hello")
+    return res.status(200).json({message:"hello"})
+})
+
 app.get('/get_episodes', async(req,res)=>{
     try {
         const episodes = await Episode.find({})
